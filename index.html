@@ -6,6 +6,15 @@
     <title>Unity WebGL Player | Drunkards' Toast</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      .unity-landscape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center center;
+}
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -83,7 +92,7 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
-        canvas.className = "unity-mobile";
+        canvas.className = "unity-landscape";
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
